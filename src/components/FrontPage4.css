@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.front-page-4 {
+  width: 1440px;
+  height: 1572px;
+  background: #9A0002;
+  position: relative;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* Navbar styles */
+.front-page-4 .navbar-header {
+  width: 100%;
+  height: 135px;
+  background: #EFE6DE;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 566px 11.953px 0;
+}
+
+.front-page-4 .logo {
+  width: 308px;
+  height: 135px;
+  position: absolute;
+  left: -16px;
+  top: -12px;
+}
+
+.front-page-4 .main-navbar {
+  display: flex;
+  width: 556px;
+  height: 24px;
+  padding: 0 10px 0 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 318px;
+  top: 44px;
+}
+
+.front-page-4 .nav-link {
+  color: #3C070D;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+/* Central oval container with food image */
+.front-page-4 .central-oval-container {
+  width: 554px;
+  height: 476px;
+  border-radius: 554px;
+  position: absolute;
+  left: 460px;
+  top: 92px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-page-4 .central-food-image {
+  width: 503px;
+  height: 503px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Decorative food images */
+.front-page-4 .decorative-image {
+  position: absolute;
+  flex-shrink: 0;
+}
+
+.front-page-4 .left-image {
+  width: 465px;
+  height: 401px;
+  left: -205px;
+  top: 123px;
+}
+
+.front-page-4 .right-image {
+  width: 444px;
+  height: 461px;
+  left: 1236px;
+  top: 81px;
+}
+
+/* Welcome title */
+.front-page-4 .welcome-title {
+  width: 960px;
+  height: 323px;
+  color: #EFE6DE;
+  text-align: center;
+  font-size: 70.947px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 240px;
+  top: 555px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Language selector */
+.front-page-4 .language-selector {
+  width: 360px;
+  height: 85px;
+  border-radius: 51px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 1055px;
+  top: 524px;
+  display: flex;
+  align-items: center;
+}
+
+.front-page-4 .language-option {
+  height: 48px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-page-4 .active-lang {
+  width: 134px;
+  color: #000;
+  position: absolute;
+  left: 86px;
+  top: 19px;
+}
+
+.front-page-4 .inactive-lang {
+  width: 116px;
+  color: #9A0002;
+  position: absolute;
+  left: 244px;
+  top: 19px;
+}
+
+/* Navigation cards section */
+.front-page-4 .navigation-cards {
+  width: 904px;
+  height: 727px;
+  position: absolute;
+  left: 268px;
+  top: 823px;
+}
+
+.front-page-4 .nav-card {
+  width: 424px;
+  height: 336px;
+  border-radius: 16.977px;
+  background: #F0F5FA;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-page-4 .about-card {
+  left: 0;
+  top: 0;
+}
+
+.front-page-4 .services-card {
+  left: 480px;
+  top: 0;
+}
+
+.front-page-4 .order-card {
+  left: 0;
+  top: 391px;
+}
+
+.front-page-4 .contact-card {
+  left: 480px;
+  top: 391px;
+}
+
+.front-page-4 .card-title {
+  width: 222px;
+  height: 44px;
+  color: #3C070D;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .front-page-4 {
+    width: 100vw;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .front-page-4 {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .front-page-4 {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .front-page-4 {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  .front-page-4 {
+    transform: scale(0.4);
+  }
+}

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.front-page-4-tamil {
+  width: 1440px;
+  height: 1867px;
+  background: #9A0002;
+  position: relative;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* Header */
+.header-container-4-tamil {
+  display: inline-flex;
+  padding: 0 566px 11.953px 0;
+  align-items: center;
+  gap: 26.788px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 135px;
+}
+
+.logo-image-4-tamil {
+  width: 308px;
+  height: 135px;
+  position: absolute;
+  left: -16px;
+  top: -12px;
+}
+
+/* Navbar */
+.navbar-4-tamil {
+  display: flex;
+  width: 556px;
+  height: 24px;
+  padding: 0 10px 0 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 318px;
+  top: 44px;
+}
+
+.nav-item-4-tamil {
+  color: #3C070D;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-item-4-tamil:hover {
+  color: #9A0002;
+}
+
+/* Language Toggle */
+.language-toggle-4-tamil {
+  width: 360px;
+  height: 85px;
+  border-radius: 51px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 1055px;
+  top: 524px;
+  display: flex;
+  align-items: center;
+}
+
+.language-option-4-tamil {
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-option-4-tamil.en-option {
+  width: 134px;
+  color: #9A0002;
+  position: absolute;
+  left: 86px;
+  top: 19px;
+}
+
+.language-option-4-tamil.ta-option {
+  width: 116px;
+  color: #000;
+  position: absolute;
+  left: 244px;
+  top: 19px;
+}
+
+/* Central Oval Container */
+.central-oval-container-4-tamil {
+  width: 554px;
+  height: 476px;
+  border-radius: 554px;
+  position: absolute;
+  left: 460px;
+  top: 92px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-food-image-4-tamil {
+  width: 503px;
+  height: 503px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Decorative Food Images */
+.decorative-image-4-tamil {
+  position: absolute;
+  flex-shrink: 0;
+}
+
+.left-food-image-4-tamil {
+  width: 465px;
+  height: 401px;
+  left: -205px;
+  top: 123px;
+}
+
+.right-food-image-4-tamil {
+  width: 444px;
+  height: 461px;
+  left: 1236px;
+  top: 81px;
+}
+
+/* Welcome Title */
+.welcome-title-4-tamil {
+  width: 1402px;
+  height: 347px;
+  color: #EFE6DE;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 37px;
+  top: 609px;
+  margin: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Service Grid */
+.service-grid-4-tamil {
+  width: 904px;
+  height: 727px;
+  position: absolute;
+  left: 299px;
+  top: 1080px;
+  display: grid;
+  grid-template-columns: 424px 424px;
+  grid-template-rows: 336px 336px;
+  gap: 56px 56px;
+}
+
+.service-card-4-tamil {
+  width: 424px;
+  height: 336px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-card-4-tamil:hover {
+  transform: translateY(-5px);
+}
+
+.service-background-4-tamil {
+  width: 424px;
+  height: 336px;
+  border-radius: 16.977px;
+  background: #F0F5FA;
+  position: absolute;
+  left: 0;
+  top: 0;
+  flex-shrink: 0;
+}
+
+.service-title-4-tamil {
+  width: 222px;
+  height: 44px;
+  color: #3C070D;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 101px;
+  top: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .front-page-4-tamil {
+    width: 100vw;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .front-page-4-tamil {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .front-page-4-tamil {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .front-page-4-tamil {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  .front-page-4-tamil {
+    transform: scale(0.4);
+  }
+}

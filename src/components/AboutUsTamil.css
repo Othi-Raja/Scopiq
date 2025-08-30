@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.about-page-tamil {
+  width: 1440px;
+  height: 2958px;
+  background: #9A0002;
+  position: relative;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Background Pattern Images */
+.pattern-image {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.24;
+  position: absolute;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.pattern-left-tamil {
+  left: -455px;
+  top: 403px;
+}
+
+.pattern-right-tamil {
+  left: 636px;
+  top: 1665px;
+}
+
+/* Navbar */
+.navbar-container-tamil {
+  display: inline-flex;
+  padding: 0 631px 11.953px 0;
+  align-items: center;
+  gap: 26.788px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1505px;
+  height: 135px;
+}
+
+.logo-image-tamil {
+  width: 308px;
+  height: 135px;
+  position: absolute;
+  left: -16px;
+  top: -12px;
+}
+
+.navbar-tamil {
+  display: flex;
+  width: 556px;
+  height: 24px;
+  padding: 0 10px 0 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 318px;
+  top: 44px;
+}
+
+.nav-item-tamil {
+  color: #3C070D;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-item-tamil:hover {
+  color: #9A0002;
+}
+
+/* Language Toggle */
+.language-toggle-tamil {
+  width: 360px;
+  height: 85px;
+  border-radius: 51px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 1060px;
+  top: 187px;
+  display: flex;
+  align-items: center;
+}
+
+.language-option-tamil {
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-option-tamil:first-child {
+  width: 134px;
+  color: #000;
+  position: absolute;
+  left: 86px;
+  top: 19px;
+}
+
+.language-option-tamil.active-tamil {
+  width: 116px;
+  color: #9A0002;
+  position: absolute;
+  left: 244px;
+  top: 19px;
+}
+
+/* Main Title */
+.main-title-tamil {
+  width: 1402px;
+  height: 432px;
+  color: #EFE6DE;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 43px;
+  top: 187px;
+  margin: 0;
+  white-space: pre-line;
+  flex-shrink: 0;
+}
+
+/* Section Title */
+.section-title-tamil {
+  width: 676px;
+  color: #EFE6DE;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 32px;
+  top: 746px;
+  height: 96px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Journey Content */
+.journey-content-tamil {
+  position: relative;
+}
+
+.journey-description-tamil {
+  width: 796px;
+  height: 569px;
+  color: #EFE6DE;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 32px;
+  top: 897px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Food Images */
+.food-image-tamil {
+  border-radius: 80px;
+  position: absolute;
+  flex-shrink: 0;
+}
+
+.food-image-1-tamil {
+  width: 502px;
+  height: 325px;
+  left: 851px;
+  top: 794px;
+  box-shadow: 32px 33px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.food-image-2-tamil {
+  width: 517px;
+  height: 373px;
+  left: 851px;
+  top: 1242px;
+  box-shadow: 32px 32px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.food-image-3-tamil {
+  width: 525px;
+  height: 365px;
+  left: 32px;
+  top: 1735px;
+  box-shadow: 32px 32px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Story Section */
+.story-section-tamil {
+  position: relative;
+}
+
+.founder-story-tamil {
+  width: 734px;
+  height: 1152px;
+  color: #EFE6DE;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 652px;
+  top: 1721px;
+  margin: 0;
+  flex-shrink: 0;
+  white-space: pre-line;
+}
+
+.final-image-container-tamil {
+  position: absolute;
+  left: 32px;
+  top: 2205px;
+}
+
+.final-image-tamil {
+  width: 525px;
+  height: 365px;
+  filter: drop-shadow(32px 32px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 80px;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .about-page-tamil {
+    width: 100vw;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-page-tamil {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .about-page-tamil {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-tamil {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  .about-page-tamil {
+    transform: scale(0.4);
+  }
+}

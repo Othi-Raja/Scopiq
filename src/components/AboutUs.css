@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.about-page {
+  width: 1440px;
+  height: 2443px;
+  background: #9A0002;
+  position: relative;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Background Pattern Images */
+.pattern-image {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.24;
+  position: absolute;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.pattern-left {
+  left: -579px;
+  top: 190px;
+}
+
+.pattern-right {
+  left: 657px;
+  top: 1433px;
+}
+
+/* Navbar */
+.navbar-container {
+  display: inline-flex;
+  padding: 0 631px 11.953px 0;
+  align-items: center;
+  gap: 26.788px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1505px;
+  height: 135px;
+}
+
+.logo-image {
+  width: 308px;
+  height: 135px;
+  position: absolute;
+  left: -16px;
+  top: -12px;
+}
+
+.navbar {
+  display: flex;
+  width: 556px;
+  height: 24px;
+  padding: 0 10px 0 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 318px;
+  top: 44px;
+}
+
+.nav-item {
+  color: #3C070D;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #9A0002;
+}
+
+/* Language Toggle */
+.language-toggle {
+  width: 360px;
+  height: 85px;
+  border-radius: 51px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 1041px;
+  top: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px;
+}
+
+.language-option {
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.language-option.active {
+  color: #9A0002;
+}
+
+.language-option:not(.active) {
+  color: #000;
+}
+
+/* Main Title */
+.main-title {
+  width: 1402px;
+  height: 347px;
+  color: #EFE6DE;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 43px;
+  top: 187px;
+  margin: 0;
+  white-space: pre-line;
+}
+
+/* Section Title */
+.section-title {
+  width: 676px;
+  color: #EFE6DE;
+  text-align: center;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: -81px;
+  top: 746px;
+  height: 96px;
+  margin: 0;
+}
+
+/* Journey Content */
+.journey-content {
+  position: relative;
+}
+
+.journey-description {
+  width: 796px;
+  height: 569px;
+  color: #EFE6DE;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 32px;
+  top: 897px;
+  margin: 0;
+}
+
+/* Food Images */
+.food-image {
+  border-radius: 80px;
+  box-shadow: 32px 33px 4px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  flex-shrink: 0;
+}
+
+.food-image-1 {
+  width: 502px;
+  height: 325px;
+  left: 851px;
+  top: 679px;
+}
+
+.food-image-2 {
+  width: 517px;
+  height: 373px;
+  left: 858px;
+  top: 1081px;
+  box-shadow: 32px 32px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.food-image-3 {
+  width: 525px;
+  height: 365px;
+  left: 70px;
+  top: 1511px;
+  box-shadow: 32px 32px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Story Section */
+.story-section {
+  position: relative;
+}
+
+.founder-story {
+  width: 734px;
+  height: 792px;
+  color: #EFE6DE;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 679px;
+  top: 1466px;
+  margin: 0;
+}
+
+.final-image-container {
+  position: absolute;
+  left: 70px;
+  top: 1965px;
+}
+
+.final-image {
+  width: 525px;
+  height: 365px;
+  filter: drop-shadow(32px 32px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .about-page {
+    width: 100vw;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-page {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .about-page {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  .about-page {
+    transform: scale(0.4);
+  }
+}

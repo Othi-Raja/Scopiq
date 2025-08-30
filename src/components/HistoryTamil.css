@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.history-tamil-container {
+  width: 1440px;
+  height: 4092px;
+  background: #EFE6DE;
+  position: relative;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* Background decorative images */
+.pattern-image-1 {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.24;
+  position: absolute;
+  left: -495px;
+  top: 307px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+}
+
+.pattern-image-2 {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.05;
+  position: absolute;
+  left: -495px;
+  top: 307px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+}
+
+.pattern-image-3 {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.24;
+  position: absolute;
+  left: 612px;
+  top: 1423px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+}
+
+.pattern-image-4 {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.05;
+  position: absolute;
+  left: 612px;
+  top: 1423px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+}
+
+.pattern-image-5 {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.24;
+  position: absolute;
+  left: -495px;
+  top: 2454px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+}
+
+.pattern-image-6 {
+  width: 1208px;
+  height: 1208px;
+  opacity: 0.05;
+  position: absolute;
+  left: -495px;
+  top: 2454px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+}
+
+/* Timeline dots */
+.timeline-dot {
+  width: 38px;
+  height: 38px;
+  background: #9A0002;
+  border-radius: 50%;
+  position: absolute;
+  flex-shrink: 0;
+}
+
+.timeline-dot-1 {
+  left: 499px;
+  top: 471px;
+}
+
+.timeline-dot-2 {
+  left: 500px;
+  top: 1254px;
+}
+
+.timeline-dot-3 {
+  left: 500px;
+  top: 1748px;
+}
+
+.timeline-dot-4 {
+  width: 39px;
+  height: 39px;
+  left: 498px;
+  top: 2346px;
+}
+
+.timeline-dot-5 {
+  left: 499px;
+  top: 2876px;
+}
+
+/* Main title */
+.main-history-title {
+  width: 950px;
+  height: 139px;
+  color: #9A0002;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 99px;
+  top: 277px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Timeline separator line */
+.timeline-separator {
+  width: 2754px;
+  height: 0px;
+  background: linear-gradient(0deg, #9A0002 0%, #9A0002 100%), #EFE6DE;
+  position: absolute;
+  left: 521px;
+  top: 502px;
+}
+
+/* Curved timeline connection */
+.timeline-curve {
+  width: 122px;
+  height: 203px;
+  position: absolute;
+  left: 144px;
+  top: 37px;
+  flex-shrink: 0;
+}
+
+/* Timeline years */
+.timeline-year {
+  color: #9A0002;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  flex-shrink: 0;
+}
+
+.timeline-year-1 {
+  width: 370px;
+  height: 40px;
+  left: 109px;
+  top: 450px;
+}
+
+.timeline-year-2 {
+  width: 479px;
+  height: 116px;
+  left: 26px;
+  top: 1254px;
+}
+
+.timeline-year-3 {
+  width: 546px;
+  height: 40px;
+  left: 96px;
+  top: 1748px;
+}
+
+.timeline-year-4 {
+  width: 423px;
+  height: 41px;
+  left: 79px;
+  top: 2366px;
+}
+
+.timeline-year-5 {
+  width: 405px;
+  height: 112px;
+  left: 71px;
+  top: 2879px;
+}
+
+/* Timeline descriptions */
+.timeline-description {
+  color: #9A0002;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.timeline-description-1 {
+  width: 808px;
+  height: 293px;
+  left: 632px;
+  top: 447px;
+}
+
+.timeline-description-2 {
+  width: 732px;
+  height: 226px;
+  left: 592px;
+  top: 1244px;
+}
+
+.timeline-description-3 {
+  width: 808px;
+  height: 288px;
+  left: 578px;
+  top: 1753px;
+}
+
+.timeline-description-4 {
+  width: 780px;
+  height: 195px;
+  left: 592px;
+  top: 2346px;
+}
+
+.timeline-description-5 {
+  width: 808px;
+  height: 377px;
+  left: 592px;
+  top: 2879px;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .history-tamil-container {
+    width: 100vw;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .history-tamil-container {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .history-tamil-container {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .history-tamil-container {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  .history-tamil-container {
+    transform: scale(0.4);
+  }
+}

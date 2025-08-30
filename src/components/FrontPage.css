@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.front-page {
+  width: 1440px;
+  height: 1572px;
+  background: #9A0002;
+  position: relative;
+  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.hero-card {
+  width: 684px;
+  height: 380px;
+  border-radius: 47px;
+  background: #EFE6DE;
+  position: absolute;
+  left: 385px;
+  top: 412px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-hero-image {
+  width: 662px;
+  height: 349px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .front-page {
+    width: 100vw;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .front-page {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .front-page {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .front-page {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  .front-page {
+    transform: scale(0.4);
+  }
+}
