@@ -7,7 +7,7 @@ import Navbar from './components/Navbar.jsx'
 import FrontPage2 from './components/FrontPage2.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Navbar />
+
     <FrontPage2 />
     {/* <AboutUs /> */}
   </StrictMode>,

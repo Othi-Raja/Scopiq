@@ -1,48 +1,73 @@
 import React from 'react';
 import './FrontPage2.css';
 import Marquee from "react-fast-marquee";
+import fishimg from '../assets/fish.png'
+import chickenimg from '../assets/chicken.png'
+import prawnimg from '../assets/prawn.png'
+import Navbar from './Navbar';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 const FrontPage2 = () => {
+  const cards = [
+    { title: "SERVICES", className: "services-card" },
+    { title: "ORDER NOW", className: "order-card" },
+    { title: "ABOUT US", className: "about-card" },
+    { title: "CONTACT US", className: "contact-card" },
+  ];
   return (
-    <div className="front-page-2 bg-[#9a0002]">
-     <Marquee> 
-       {/* Background decorative images */}
-      <img
-        className="decorative-image left-image"
-        src="https://api.builder.io/api/v1/image/assets/TEMP/22d7a51f0bdb3a6b3279a7a81079b4d8f6fbac47?width=872"
-        alt="Decorative food background"
-      />
-      <img
-        className="decorative-image right-image"
-        src="https://api.builder.io/api/v1/image/assets/TEMP/80d0a39af64b4cefaf18ec5d6c99f77f77a777ad?width=944"
-        alt="Decorative food background"
-      />
-      {/* Central oval image */}
-      <img
-        className="central-food-image"
-        src="https://api.builder.io/api/v1/image/assets/TEMP/f10243c41293842ebff5ee5d38980b6d5958726f?width=910"
-        alt="Featured food dish"
-      />
-     </Marquee>
-      {/* Welcome title */}
-      <h1 className="welcome-title">
-        WELCOME TO
-        YATRA'S COOKING CAVE
-      </h1>
-      {/* Navigation cards section */}
-      {/* <div className="navigation-cards">
-        <div className="nav-card about-card">
-          <div className="card-title">ABOUT US</div>
-        </div>
-        <div className="nav-card services-card">
-          <div className="card-title">SERVICES</div>
-        </div>
-        <div className="nav-card order-card">
-          <div className="card-title">ORDER NOW</div>
-        </div>
-        <div className="nav-card contact-card">
-          <div className="card-title">CONTACT US</div>
-        </div>
-      </div> */}
+    <div className="front-page-2 bg-[#9a0002] vh-100">
+      <Navbar />
+      <Marquee autoFill style={{
+        zIndex: 1
+      }} >
+        {/* Background decorative images */}
+        <img
+          className="decorative-image left-image "
+          style={{
+            height: "300px",
+            width: "300px",
+          }}
+          src={fishimg}
+          alt="Decorative food background"
+        />
+        <img
+          style={{
+            height: "300px",
+            width: "300px",
+          }}
+          className="decorative-image right-image"
+          src={chickenimg}
+          alt="Decorative food background"
+        />
+        {/* Central oval image */}
+        <img
+          style={{
+            height: "300px",
+            width: "300px",
+          }}
+          className="central-food-image"
+          src={prawnimg}
+        />
+      </Marquee>
+      <div className=' text-center'>
+        {/* Welcome title */}
+        <h1 className=" text-white fs-1 fw-bolder">
+          WELCOME TO
+        </h1>
+        <h1 className=" text-white fw-bolder">   YATRA'S COOKING CAVE</h1>
+      </div>
+      <Container className="mt-4">
+        <Row className="g-4">
+          {cards.map((card, index) => (
+            <Col key={index} sm={6}>
+              <Card className={`mb-3${card.className}`} style={{ height: "250px" }}>
+                <Card.Body className="d-flex justify-content-center align-items-center">
+                  <h4>{card.title}</h4>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 };
