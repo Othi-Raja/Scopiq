@@ -57,8 +57,8 @@ const Timeline = () => {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 lg:mb-20 opacity-0 animate-[fadeInUp_1s_ease-out_0.2s_forwards]">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-red-800 via-red-700 to-orange-600 bg-clip-text text-transparent mb-3 sm:mb-4 leading-tight">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20  mt-5 animate-[fadeInUp_1s_ease-out_0.2s_forwards]">
+          <h2 className="text-3xl   text-red-400">
             A Brief History
           </h2>
           <div className="w-16 sm:w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>

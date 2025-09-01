@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import placehold from "../assets/aboutpg/river.jpg";
 import Navbar from "./Navbar";
 import TamilChecker from "./TamilChecker";
 import Footer from "./Footer";
 import Timeline from './timeline.jsx'
+import Aos from "aos";
 export default function AboutUs() {
+  useEffect(() => {
+    Aos.init();
+  })
   const aboutjson = [
     {
       title: "OUR JOURNEY",
