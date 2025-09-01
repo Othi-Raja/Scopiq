@@ -4,6 +4,7 @@ import placehold from "../assets/aboutpg/river.jpg";
 import Navbar from "./Navbar";
 import TamilChecker from "./TamilChecker";
 import Footer from "./Footer";
+import Timeline from './timeline.jsx'
 export default function AboutUs() {
   const aboutjson = [
     {
@@ -118,6 +119,7 @@ export default function AboutUs() {
           ))}
         </Container>
       </div >
+      <Timeline/>
       <Footer />
     </div>
   );
