@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Services.css';
 import Navbar from './Navbar';
 import { Container, Row, Col } from 'react-bootstrap';
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { addToCart } from '../store/cartSlice';
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';

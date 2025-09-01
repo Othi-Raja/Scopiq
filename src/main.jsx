@@ -10,8 +10,9 @@ import Navbar from "./components/Navbar.jsx";
 import FrontPage2 from "./components/FrontPage2.jsx";
 import Services from "./components/Services.jsx";
 import Myorder from "./components/orderspage/myorder.jsx";
-import Contact from "./components/contacts/ContactUs.jsx";
+ 
 import GlobalLoader from "./components/GlobalLoader.jsx";
+import Contact from "./components/contacts/contactUs.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={store}>
