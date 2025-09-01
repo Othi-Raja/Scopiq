@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import TamilChecker from "./TamilChecker";
 const Timeline = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -6,24 +7,54 @@ const Timeline = () => {
   const itemRefs = useRef([]);
   const events = [
     {
-      year: "2009 – The Beginning",
-      text: "Gayathripriya Durai started a small restaurant in Chennai, serving traditional recipes passed down from previous generations to customers with care",
+      year: {
+        en: "2009 – The Beginning",
+        tn: "2009 – தொடக்கம்"
+      },
+      text: {
+        en: "Gayathripriya Durai started a small restaurant in Chennai, serving traditional recipes passed down from previous generations to customers with care",
+        tn: "காயத்ரிபிரியா துரை சென்னைவில் ஒரு சிறிய உணவகம் தொடங்கி, முன்னோர் தலைமுறையால் பதிந்த பாரம்பரிய உணவுகளை கவனமாக வழங்கினார்"
+      },
     },
     {
-      year: "2013 – A Pause",
-      text: "She took a short break, but her passion for cooking remained strong and unwavering",
+      year: {
+        en: "2013 – A Pause",
+        tn: "2013 – ஓய்வு"
+      },
+      text: {
+        en: "She took a short break, but her passion for cooking remained strong and unwavering",
+        tn: "அவள் சிறிது ஓய்வு எடுத்தார், ஆனால் சமையலுக்கான ஆர்வம் உறுதியுடன் தொடர்ந்தது"
+      },
     },
     {
-      year: "2021 – A New Beginning",
-      text: "Restarting from home, Yathraa's Cooking Cave began once again, accepting orders through Instagram and private platforms.",
+      year: {
+        en: "2021 – A New Beginning",
+        tn: "2021 – புதிய தொடக்கம்"
+      },
+      text: {
+        en: "Restarting from home, Yathraa's Cooking Cave began once again, accepting orders through Instagram and private platforms.",
+        tn: "வீட்டிலிருந்து மீண்டும் தொடங்கி, யத்ராவின் குக்கிங் கேவ் மீண்டும் ஆரம்பித்து, இன்ஸ்டாகிராம் மற்றும் தனிப்பட்ட தளங்களின் மூலம் ஆர்டர்களை ஏற்றுக்கொண்டது"
+      },
     },
     {
-      year: "2023 – Expanding Our Service",
-      text: "Started offering food services in the Anna Nagar area, bringing delicious homemade meals to more people",
+      year: {
+        en: "2023 – Expanding Our Service",
+        tn: "2023 – சேவையை விரிவாக்குதல்"
+      },
+      text: {
+        en: "Started offering food services in the Anna Nagar area, bringing delicious homemade meals to more people",
+        tn: "அண்ணா நகர் பகுதியில் உணவு சேவைகளை தொடங்கி, சுவையான வீட்டுப் பழக்கம் உணவுகளை மேலும் பலருக்கு கொண்டு வந்தோம்"
+      },
     },
     {
-      year: "2025 – A Journey of Fulfilling Dreams",
-      text: "Introducing Yatra's Cooking Cave | The Home Chef, with the vision of bringing traditional, ancestral recipes into every home through this heartfelt culinary journey",
+      year: {
+        en: "2025 – A Journey of Fulfilling Dreams",
+        tn: "2025 – கனவுகளை நிறைவேற்றும் பயணம்"
+      },
+      text: {
+        en: "Introducing Yatra's Cooking Cave | The Home Chef, with the vision of bringing traditional, ancestral recipes into every home through this heartfelt culinary journey",
+        tn: "யத்ரா குக்கிங் கேவ் | த ஹோம் ஷெப் என்பதை அறிமுகப்படுத்தி, பாரம்பரிய உணவுப் பழக்கங்களை ஒவ்வொரு வீட்டிற்கும் கொண்டு வருவதை நோக்கமாக கொண்ட இதயபூர்வமான சமையல் பயணத்தை தொடங்குகிறோம்"
+      },
     },
   ];
   useEffect(() => {
@@ -53,17 +84,25 @@ const Timeline = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  const timelineTitle = {
+    en: "A Brief History",
+    tn: "சுருக்கமான வரலாறு"
+  };
+  const timelineSubtitle = {
+    en: "The inspiring journey of passion, tradition, and culinary excellence",
+    tn: "ஆர்வம், பாரம்பரியம் மற்றும் சமையல் சிறப்புமிக்க பிரேரணையான பயணம்"
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20  mt-5 animate-[fadeInUp_1s_ease-out_0.2s_forwards]">
           <h2 className="text-3xl   text-red-400">
-            A Brief History
+            {TamilChecker() ? timelineTitle.tn : timelineTitle.en}
           </h2>
           <div className="w-16 sm:w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>
           <p className="text-gray-600 mt-3 sm:mt-4 text-base sm:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto px-2">
-            The inspiring journey of passion, tradition, and culinary excellence
+            {TamilChecker() ? timelineSubtitle.tn : timelineSubtitle.en}
           </p>
         </div>
         {/* Timeline */}
@@ -127,10 +166,10 @@ const Timeline = () => {
                       : "translate-x-4 sm:translate-x-8"
                     }`}>
                     <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3 bg-gradient-to-r   bg-clip-text text-transparent leading-tight">
-                      {event.year}
+                      {TamilChecker() ? event.year.tn : event.year.en}
                     </h3>
                     <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                      {event.text}
+                      {TamilChecker() ? event.text.tn : event.text.en}
                     </p>
                   </div>
                 </div>
@@ -153,10 +192,10 @@ const Timeline = () => {
                         <div className={`absolute top-0 w-16 lg:w-20 h-16 lg:h-20 bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-xl lg:rounded-2xl ${isLeft ? "right-0 rounded-tr-xl lg:rounded-tr-2xl" : "left-0 rounded-tl-xl lg:rounded-tl-2xl"
                           }`}></div>
                         <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-3 lg:mb-4 bg-gradient-to-r bg-clip-text text-transparent relative z-10 leading-tight">
-                          {event.year}
+                          {TamilChecker() ? event.year.tn : event.year.en}
                         </h3>
                         <p className="text-gray-700 leading-relaxed text-base lg:text-lg relative z-10">
-                          {event.text}
+                          {TamilChecker() ? event.text.tn : event.text.en}
                         </p>
                         {/* Floating decoration */}
                         <div className={`absolute -top-1 lg:-top-2 w-3 lg:w-4 h-3 lg:h-4 bg-gradient-to-r from-orange-400 to-red-500 rounded-full opacity-60 ${isLeft ? "-right-1 lg:-right-2" : "-left-1 lg:-left-2"
@@ -187,7 +226,7 @@ const Timeline = () => {
           </div>
         </div>
         {/* Footer message */}
-        <div className="text-center mt-12 sm:mt-16 lg:mt-20 mx-2 sm:mx-4 lg:mx-8 p-6 sm:p-8 lg:p-10 bg-white/60 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/20 opacity-0 animate-[fadeInUp_1s_ease-out_2.5s_forwards]">
+        <div className="text-center mt-12 sm:mt-16 lg:mt-20 mx-2 sm:mx-4 lg:mx-8 p-6 sm:p-8 lg:p-10 bg-white/60 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/20  animate-[fadeInUp_1s_ease-out_2.5s_forwards]">
           <p className="text-gray-700 text-base sm:text-lg lg:text-xl italic leading-relaxed">
             "Every recipe tells a story, every dish carries tradition."
           </p>
