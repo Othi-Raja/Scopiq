@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Container, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <Container className="footer-container  mt-5">
@@ -57,12 +58,11 @@ const Footer = () => {
           {/* Quick Links Section */}
           <section className="quick-links-section">
             <h2 className="quick-links-title">QUICK LINKS</h2>
-            <nav className="footer-nav">
-              <div className="footer-nav-item">HOME</div>
-              <div className="footer-nav-item">CONTACT US</div>
-              <div className="footer-nav-item">ABOUT US</div>
-              <div className="footer-nav-item">SERVICES</div>
-              <div className="footer-nav-item">ORDER NOW</div>
+            <nav className="footer-nav f">
+              <Link to="/" className="footer-nav-item text-decoration-none ">HOME</Link>
+              <Link to="/ContactUs" className="footer-nav-item text-decoration-none">CONTACT US</Link>
+              <Link to="/about" className="footer-nav-item text-decoration-none">ABOUT US</Link>
+              <Link to="/services" className="footer-nav-item text-decoration-none">SERVICES</Link>
             </nav>
           </section>
         </Col>
