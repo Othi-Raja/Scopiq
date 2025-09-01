@@ -9,51 +9,51 @@ const Timeline = () => {
     {
       year: {
         en: "2009 – The Beginning",
-        tn: "2009 – தொடக்கம்"
+        tn: "2009 -தொடக்கம்"
       },
       text: {
         en: "Gayathripriya Durai started a small restaurant in Chennai, serving traditional recipes passed down from previous generations to customers with care",
-        tn: "காயத்ரிபிரியா துரை சென்னைவில் ஒரு சிறிய உணவகம் தொடங்கி, முன்னோர் தலைமுறையால் பதிந்த பாரம்பரிய உணவுகளை கவனமாக வழங்கினார்"
+        tn: "காயத்ரிப்ரியா துரை சென்னையில் ஒரு சிறிய உணவகம் தொடங்கி, முன்னோர் தலைமுறைகளிலிருந்து பரம்பரை வழியாக வந்த பாரம்பரிய சமையல் செய்முறைகளை பராமரித்து, அன்போடு வாடிக்கையாளர்களுக்கு வழங்குகிறார்"
       },
     },
     {
       year: {
         en: "2013 – A Pause",
-        tn: "2013 – ஓய்வு"
+        tn: "2013 - ஒரு இடைவெளை"
       },
       text: {
         en: "She took a short break, but her passion for cooking remained strong and unwavering",
-        tn: "அவள் சிறிது ஓய்வு எடுத்தார், ஆனால் சமையலுக்கான ஆர்வம் உறுதியுடன் தொடர்ந்தது"
+        tn: "அவர் சிறிது காலம் இடைவேளை எடுத்தாலும், சமையல் குறித்த அவரது ஆர்வம் உறுதியாகவும் அழியாததாகவும் இருந்தது"
       },
     },
     {
       year: {
         en: "2021 – A New Beginning",
-        tn: "2021 – புதிய தொடக்கம்"
+        tn: "2021 –ஒரு புதிய தொடக்கம்"
       },
       text: {
         en: "Restarting from home, Yathraa's Cooking Cave began once again, accepting orders through Instagram and private platforms.",
-        tn: "வீட்டிலிருந்து மீண்டும் தொடங்கி, யத்ராவின் குக்கிங் கேவ் மீண்டும் ஆரம்பித்து, இன்ஸ்டாகிராம் மற்றும் தனிப்பட்ட தளங்களின் மூலம் ஆர்டர்களை ஏற்றுக்கொண்டது"
+        tn: "வீட்டிலிருந்து மீண்டும் தொடங்கி, யாத்ரா’ஸ் கூக்கிங் கேவ் இன்ஸ்டாகிராம் மற்றும்  சோசியல்மீடியா  மூலம் ஆர்டர்களை ஏற்றுக்கொள்ளத் தொடங்கியது"
       },
     },
     {
       year: {
         en: "2023 – Expanding Our Service",
-        tn: "2023 – சேவையை விரிவாக்குதல்"
+        tn: "2023 –எங்கள் சேவையை விரிவாக்கல்"
       },
       text: {
         en: "Started offering food services in the Anna Nagar area, bringing delicious homemade meals to more people",
-        tn: "அண்ணா நகர் பகுதியில் உணவு சேவைகளை தொடங்கி, சுவையான வீட்டுப் பழக்கம் உணவுகளை மேலும் பலருக்கு கொண்டு வந்தோம்"
+        tn: "அண்ணா நகர் பகுதியில் உணவு சேவைகளை வழங்கத் தொடங்கியதோடு, ருசிகரமான வீட்டு உணவுகளை  பலரிடம் கொண்டு சேர்கிறார் "
       },
     },
     {
       year: {
         en: "2025 – A Journey of Fulfilling Dreams",
-        tn: "2025 – கனவுகளை நிறைவேற்றும் பயணம்"
+        tn: "னவுகளை நிறைவேற்றும் ஒரு பயண"
       },
       text: {
         en: "Introducing Yatra's Cooking Cave | The Home Chef, with the vision of bringing traditional, ancestral recipes into every home through this heartfelt culinary journey",
-        tn: "யத்ரா குக்கிங் கேவ் | த ஹோம் ஷெப் என்பதை அறிமுகப்படுத்தி, பாரம்பரிய உணவுப் பழக்கங்களை ஒவ்வொரு வீட்டிற்கும் கொண்டு வருவதை நோக்கமாக கொண்ட இதயபூர்வமான சமையல் பயணத்தை தொடங்குகிறோம்"
+        tn: "யாத்ரா’ஸ் கூக்கிங் கேவ் | தி ஹோம் ஷெஃப் என அறிமுகப்படுத்தி, பாரம்பரியமான முன்னோர்களின் சமையல் செய்முறைகளை அன்பும்,அக்கறை நிறைந்த மனதோடு  சமையல் பயணத்தின் மூலம் ஒவ்வொரு வீட்டிற்கும் கொண்டு சேர்கிறா"
       },
     },
   ];
