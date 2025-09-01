@@ -9,12 +9,10 @@ import History from './components/History'
 import Services from './components/Services'
 import OrderNowInfo from './components/OrderNowInfo'
 import OrderNowInfoTamil from './components/OrderNowInfoTamil'
-import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import Contact from './components/contacts/contactUs'
 function App() {
   return (
     <>
@@ -29,10 +27,9 @@ function App() {
       <Services />
       <OrderNowInfo />
       <OrderNowInfoTamil />
-      <ContactUs />
+      <Contact />
       <Footer />
     </>
   )
 }
-
 export default App

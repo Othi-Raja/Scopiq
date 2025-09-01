@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: "Poppins", sans-serif;
+}
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .contact-page {
+    padding: 10px 0;
+  }
+}
+/* Card animations */
+.contact-page .MuiCard-root {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInUp 0.6s ease forwards;
+}
+.contact-page .MuiCard-root:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.contact-page .MuiCard-root:nth-child(2) {
+  animation-delay: 0.2s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Enhanced form styling */
+.contact-page .MuiTextField-root,
+.contact-page .MuiFormControl-root {
+  margin-bottom: 16px;
+}
+.contact-page .MuiInputLabel-root {
+  font-weight: 500;
+  color: #333;
+}
+.contact-page .MuiOutlinedInput-root {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.contact-page .MuiOutlinedInput-root:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 4px 15px rgba(154, 0, 2, 0.1); */
+}
+.contact-page .MuiOutlinedInput-root.Mui-focused {
+  transform: translateY(-2px);
+  /* box-shadow: 0 6px 20px rgba(154, 0, 2, 0.15); */
+}
+/* Button enhancements */
+.contact-page .MuiButton-root {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+}
+/* Social media icons enhancement */
+.contact-page .MuiIconButton-root {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-page .MuiIconButton-root:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+/* Business hours styling */
+.contact-page .MuiChip-root {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+/* Responsive grid adjustments */
+@media (max-width: 768px) {
+  .contact-page .MuiContainer-root {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .contact-page .MuiCardContent-root {
+    padding: 24px 20px;
+  }
+  .contact-page .MuiTypography-h2 {
+    font-size: 2rem;
+  }
+  .contact-page .MuiTypography-h4 {
+    font-size: 1.5rem;
+  }
+  .contact-page .MuiTypography-h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .contact-page .MuiContainer-root {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .contact-page .MuiCardContent-root {
+    padding: 20px 16px;
+  }
+  .contact-page .MuiTypography-h2 {
+    font-size: 1.75rem;
+  }
+  .contact-page .MuiTypography-h4 {
+    font-size: 1.25rem;
+  }
+  .contact-page .MuiTypography-h5 {
+    font-size: 1.1rem;
+  }
+  .contact-page .MuiGrid-container {
+    gap: 16px;
+  }
+}
+/* Enhanced shadows and depth */
+.contact-page .MuiCard-root {
+  /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(154, 0, 2, 0.05); */
+}
+.contact-page .MuiCard-root:hover {
+  /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 8px 32px rgba(154, 0, 2, 0.1); */
+}
+/* Form field focus effects */
+.contact-page .MuiTextField-root .MuiOutlinedInput-root.Mui-focused,
+.contact-page .MuiFormControl-root .MuiOutlinedInput-root.Mui-focused {
+  /* box-shadow: 0 0 0 3px rgba(154, 0, 2, 0.1); */
+}
+/* Enhanced button states */
+.contact-page .MuiButton-root:active {
+  transform: translateY(0) scale(0.98);
+}
+/* Smooth scrolling */
+.contact-page {
+  scroll-behavior: smooth;
+}
+/* Loading states for form submission */
+.contact-page .MuiButton-root.Mui-disabled {
+  background: linear-gradient(135deg, #ccc 0%, #999 100%);
+  color: #666;
+}
+/* Success message styling */
+.contact-page .success-message {
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+/* Error message styling */
+.contact-page .error-message {
+  background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+/* Enhanced accessibility */
+.contact-page .MuiFormLabel-root {
+  font-weight: 500;
+}
+.contact-page .MuiInputBase-input {
+  font-size: 16px; /* Prevents zoom on mobile */
+}
+/* Custom scrollbar for message textarea */
+.contact-page .MuiInputBase-input::-webkit-scrollbar {
+  width: 8px;
+}
+.contact-page .MuiInputBase-input::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.contact-page .MuiInputBase-input::-webkit-scrollbar-thumb {
+  background: #9a0002;
+  border-radius: 4px;
+}
+.contact-page .MuiInputBase-input::-webkit-scrollbar-thumb:hover {
+  background: #3d0a0a;
+}
+/* Enhanced mobile experience */
+@media (max-width: 600px) {
+  .contact-page .MuiGrid-item {
+    padding: 8px;
+  }
+  .contact-page .MuiTextField-root,
+  .contact-page .MuiFormControl-root {
+    margin-bottom: 12px;
+  }
+}
+/* Print styles */
+@media print {
+  .contact-page {
+    background: white;
+  }
+  .contact-page .MuiCard-root {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

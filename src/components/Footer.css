@@ -1,206 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+/* Footer Styles - Professional and Responsive */
+:root {
+  --brand-primary: #9a0002;
+  --brand-dark: #3c070d;
+  --surface: #efe6de;
+  --text: #2b2b2b;
+}
 .footer-container {
-  width: 1440px;
-  height: 1052px;
-  background: #FFF;
+  border-radius: 16px;
+  padding: 32px 24px;
+  margin-top: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   position: relative;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow: hidden;
+  font-size: small;
 }
-
-/* Decorative Images */
+/* Decorative separators */
+.footer-decoration-top,
 .footer-decoration-bottom {
-  width: 721px;
-  height: 182px;
-  position: absolute;
-  left: 34px;
-  top: 764px;
-  flex-shrink: 0;
+  display: block;
+  width: 100%;
+  max-height: 24px;
+  object-fit: cover;
+  opacity: 0.9;
 }
-
 .footer-decoration-top {
-  width: 835px;
-  height: 349px;
-  position: absolute;
-  left: 320px;
-  top: -10px;
-  flex-shrink: 0;
+  margin-bottom: 16px;
 }
-
-/* License Number */
-.license-number {
-  width: 906px;
-  height: 64px;
-  color: #9A0002;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  position: absolute;
-  left: 34px;
-  top: 966px;
-  flex-shrink: 0;
+.footer-decoration-bottom {
+  margin-top: 16px;
 }
-
-/* Contact Section */
-.contact-section {
-  position: relative;
+/* Sections */
+.contact-section,
+.quick-links-section {
+  padding: 16px 8px;
 }
-
-.contact-title {
-  width: 390px;
-  height: 110px;
-  color: #9A0002;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: normal;
-  position: absolute;
-  left: 125px;
-  top: 356px;
-  flex-shrink: 0;
-  margin: 0;
+.contact-title,
+.quick-links-title {
+  color: var(--brand-dark);
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin: 0 0 16px 0;
 }
-
 /* Contact Items */
 .contact-item {
   display: flex;
+  font-size: small;
   align-items: center;
-  position: absolute;
+  gap: 12px;
+  margin: 12px 0;
+  color: var(--text);
 }
-
-.phone-item {
-  left: 28px;
-  top: 443px;
+.contact-item svg {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  filter: drop-shadow(0 2px 6px rgba(154, 0, 2, 0.2));
 }
-
-.phone-icon {
-  width: 81px;
-  height: 34px;
-  transform: rotate(48.258deg);
-  flex-shrink: 0;
-  margin-right: 20px;
-}
-
-.email-item {
-  left: 34px;
-  top: 537px;
-}
-
-.email-icon {
-  width: 68px;
-  height: 50px;
-  flex-shrink: 0;
-  margin-right: 34px;
-}
-
-.address-item {
-  left: 53px;
-  top: 624px;
-}
-
-.location-icon {
-  width: 43px;
-  height: 56px;
-  flex-shrink: 0;
-  margin-right: 62px;
-}
-
-.contact-text {
-  color: #9A0002;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  flex-shrink: 0;
-}
-
+.contact-text,
 .address-text {
-  width: 770px;
-  height: 115px;
-  color: #9A0002;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: normal;
-  flex-shrink: 0;
+  font-weight: 600;
+  color: var(--brand-dark);
 }
-
-/* Quick Links Section */
-.quick-links-section {
-  position: relative;
+.address-text {
+  line-height: 1.6;
 }
-
-.quick-links-title {
-  width: 494px;
-  height: 86px;
-  color: #9A0002;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: normal;
-  position: absolute;
-  left: 981px;
-  top: 344px;
-  flex-shrink: 0;
-  margin: 0;
-}
-
+/* Quick Links */
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  position: absolute;
-  left: 1011px;
-  top: 471px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 10px 16px;
 }
-
 .footer-nav-item {
-  width: 674px;
-  height: 44px;
-  color: #9A0002;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 36px;
+  color: var(--brand-dark);
   font-weight: 700;
-  line-height: normal;
-  flex-shrink: 0;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(154, 0, 2, 0.06);
+  border: 1px solid rgba(154, 0, 2, 0.12);
+  transition: all 0.25s ease;
+  user-select: none;
 }
-
 .footer-nav-item:hover {
-  opacity: 0.8;
+  background: rgba(154, 0, 2, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(154, 0, 2, 0.15);
 }
-
-/* Responsive Design */
-@media (max-width: 1440px) {
-  .footer-container {
-    width: 100vw;
-    transform: scale(0.8);
-    transform-origin: top left;
-  }
+.footer-nav-item:active {
+  transform: translateY(0);
 }
-
-@media (max-width: 1200px) {
-  .footer-container {
-    transform: scale(0.7);
-  }
+/* Icon specific sizing (if needed) */
+.phone-icon {
+  width: 28px;
+  height: 28px;
 }
-
+.email-icon {
+  width: 28px;
+  height: 28px;
+}
+.location-icon {
+  width: 28px;
+  height: 36px;
+}
+/* Responsive */
 @media (max-width: 992px) {
   .footer-container {
-    transform: scale(0.6);
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 768px) {
-  .footer-container {
-    transform: scale(0.5);
+  .contact-title,
+  .quick-links-title {
+    font-size: 12px;
+  }
+  .contact-item svg {
+    width: 26px;
+    height: 26px;
+  }
+  .contact-text,
+  .address-text {
+    font-size: 14px;
+  }
+  .footer-nav-item {
+    padding: 10px 12px;
+    font-size: 14px;
   }
 }
-
 @media (max-width: 576px) {
   .footer-container {
-    transform: scale(0.4);
+    padding: 20px 12px;
+    margin-top: 24px;
+  }
+  .footer-nav {
+    grid-template-columns: 1fr;
+  }
+  .footer-decoration-top,
+  .footer-decoration-bottom {
+    max-height: 16px;
+    opacity: 0.85;
   }
 }

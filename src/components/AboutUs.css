@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-.about-page {
-  width: 1440px;
-  height: 2443px;
-  background: #9A0002;
-  position: relative;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
-  overflow-x: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 /* Background Pattern Images */
 .pattern-image {
@@ -18,12 +9,10 @@
   flex-shrink: 0;
   aspect-ratio: 1/1;
 }
-
 .pattern-left {
   left: -579px;
   top: 190px;
 }
-
 .pattern-right {
   left: 657px;
   top: 1433px;
@@ -35,14 +24,13 @@
   padding: 0 631px 11.953px 0;
   align-items: center;
   gap: 26.788px;
-  background: #EFE6DE;
+  background: #efe6de;
   position: absolute;
   left: 0;
   top: 0;
   width: 1505px;
   height: 135px;
 }
-
 .logo-image {
   width: 308px;
   height: 135px;
@@ -50,7 +38,6 @@
   left: -16px;
   top: -12px;
 }
-
 .navbar {
   display: flex;
   width: 556px;
@@ -59,25 +46,23 @@
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
-  background: #EFE6DE;
+  background: #efe6de;
   position: absolute;
   left: 318px;
   top: 44px;
 }
-
 .nav-item {
-  color: #3C070D;
+  color: #3c070d;
   text-align: center;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 .nav-item:hover {
-  color: #9A0002;
+  color: #9a0002;
 }
 
 /* Language Toggle */
@@ -85,7 +70,7 @@
   width: 360px;
   height: 85px;
   border-radius: 51px;
-  background: #EFE6DE;
+  background: #efe6de;
   position: absolute;
   left: 1041px;
   top: 165px;
@@ -94,19 +79,16 @@
   justify-content: space-around;
   padding: 0 40px;
 }
-
 .language-option {
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 700;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 .language-option.active {
-  color: #9A0002;
+  color: #9a0002;
 }
-
 .language-option:not(.active) {
   color: #000;
 }
@@ -115,9 +97,9 @@
 .main-title {
   width: 1402px;
   height: 347px;
-  color: #EFE6DE;
+  color: #efe6de;
   text-align: center;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 96px;
   font-weight: 700;
   line-height: normal;
@@ -127,13 +109,12 @@
   margin: 0;
   white-space: pre-line;
 }
-
 /* Section Title */
 .section-title {
   width: 676px;
-  color: #EFE6DE;
+  color: #efe6de;
   text-align: center;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: normal;
@@ -143,17 +124,15 @@
   height: 96px;
   margin: 0;
 }
-
 /* Journey Content */
 .journey-content {
   position: relative;
 }
-
 .journey-description {
   width: 796px;
   height: 569px;
-  color: #EFE6DE;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  color: #efe6de;
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: normal;
@@ -162,7 +141,6 @@
   top: 897px;
   margin: 0;
 }
-
 /* Food Images */
 .food-image {
   border-radius: 80px;
@@ -170,14 +148,12 @@
   position: absolute;
   flex-shrink: 0;
 }
-
 .food-image-1 {
   width: 502px;
   height: 325px;
   left: 851px;
   top: 679px;
 }
-
 .food-image-2 {
   width: 517px;
   height: 373px;
@@ -185,7 +161,6 @@
   top: 1081px;
   box-shadow: 32px 32px 4px 0 rgba(0, 0, 0, 0.25);
 }
-
 .food-image-3 {
   width: 525px;
   height: 365px;
@@ -193,17 +168,15 @@
   top: 1511px;
   box-shadow: 32px 32px 4px 0 rgba(0, 0, 0, 0.25);
 }
-
 /* Story Section */
 .story-section {
   position: relative;
 }
-
 .founder-story {
   width: 734px;
   height: 792px;
-  color: #EFE6DE;
-  font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+  color: #efe6de;
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: normal;
@@ -212,20 +185,17 @@
   top: 1466px;
   margin: 0;
 }
-
 .final-image-container {
   position: absolute;
   left: 70px;
   top: 1965px;
 }
-
 .final-image {
   width: 525px;
   height: 365px;
   filter: drop-shadow(32px 32px 4px rgba(0, 0, 0, 0.25));
   border-radius: 80px;
 }
-
 /* Responsive Design */
 @media (max-width: 1440px) {
   .about-page {
@@ -234,27 +204,63 @@
     transform-origin: top left;
   }
 }
-
 @media (max-width: 1200px) {
   .about-page {
     transform: scale(0.7);
   }
 }
-
 @media (max-width: 992px) {
   .about-page {
     transform: scale(0.6);
   }
 }
-
 @media (max-width: 768px) {
   .about-page {
     transform: scale(0.5);
   }
 }
-
 @media (max-width: 576px) {
   .about-page {
     transform: scale(0.4);
   }
+}
+.section-bg {
+  position: relative;
+  background-color: #9a0002;
+  overflow: hidden;
+  z-index: 0; /* create stacking context */
+}
+.section-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/aboutpg/pat-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: 700px auto;
+  opacity: 0.2; /* makes it subtle */
+  pointer-events: none;
+  margin-top: 20px;
+  z-index: -1; /* push behind content */
+}
+.section-bg-rigth {
+  position: relative;
+  background-color: #9a0002;
+  overflow: hidden;
+  z-index: 0; /* make sure children stay above background */
+}
+/* Place image only on the right */
+.section-bg-rigth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 700px; /* limit width */
+  background-image: url("../assets/aboutpg/pat-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* keeps aspect ratio */
+  background-position: right top;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: -1; /* push behind content */
 }

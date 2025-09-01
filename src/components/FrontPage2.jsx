@@ -6,68 +6,113 @@ import chickenimg from '../assets/chicken.png'
 import prawnimg from '../assets/prawn.png'
 import Navbar from './Navbar';
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import Footer from './Footer';
+import servicebg from '../assets/servicebg.png'
+import TamilChecker from './TamilChecker';
 const FrontPage2 = () => {
   const cards = [
-    { title: "SERVICES", className: "services-card" },
-    { title: "ORDER NOW", className: "order-card" },
-    { title: "ABOUT US", className: "about-card" },
-    { title: "CONTACT US", className: "contact-card" },
+    { 
+      title: { en: "SERVICES", ta: "சேவைகள்" }, 
+      className: "services-card", 
+      bg: servicebg 
+    },
+    { 
+      title: { en: "ORDER NOW", ta: "இப்போது ஆர்டர் செய்யவும்" }, 
+      className: "order-card", 
+      bg: servicebg 
+    },
+    { 
+      title: { en: "ABOUT US", ta: "எங்களை பற்றி" }, 
+      className: "about-card", 
+      bg: servicebg 
+    },
+    { 
+      title: { en: "CONTACT US", ta: "எங்களை தொடர்பு கொள்ள" }, 
+      className: "contact-card", 
+      bg: servicebg 
+    },
   ];
+  
   return (
-    <div className="front-page-2 bg-[#9a0002] vh-100">
-      <Navbar />
-      <Marquee autoFill style={{
-        zIndex: 1
-      }} >
-        {/* Background decorative images */}
-        <img
-          className="decorative-image left-image "
-          style={{
-            height: "300px",
-            width: "300px",
-          }}
-          src={fishimg}
-          alt="Decorative food background"
-        />
-        <img
-          style={{
-            height: "300px",
-            width: "300px",
-          }}
-          className="decorative-image right-image"
-          src={chickenimg}
-          alt="Decorative food background"
-        />
-        {/* Central oval image */}
-        <img
-          style={{
-            height: "300px",
-            width: "300px",
-          }}
-          className="central-food-image"
-          src={prawnimg}
-        />
-      </Marquee>
-      <div className=' text-center'>
-        {/* Welcome title */}
-        <h1 className=" text-white fs-1 fw-bolder">
-          WELCOME TO
-        </h1>
-        <h1 className=" text-white fw-bolder">   YATRA'S COOKING CAVE</h1>
+    <div>
+      <div className="front-page-2 bg-[#9a0002] mb-2 ">
+        <Navbar />
+        <Marquee autoFill style={{
+          zIndex: 1
+        }} >
+          {/* Background decorative images */}
+          <img
+            className="decorative-image left-image "
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            src={fishimg}
+            alt="Decorative food background"
+          />
+          <img
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            className="decorative-image right-image"
+            src={chickenimg}
+            alt="Decorative food background"
+          />
+          {/* Central oval image */}
+          <img
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            className="central-food-image"
+            src={prawnimg}
+          />
+        </Marquee>
+        <div className=' text-center'>
+        {TamilChecker() ? (
+              <>
+                <h3 className=" text-white  fw-bold  mt-4 pt-4">வணக்கம் </h3>
+                <h3 className=" text-white fw-bold mb-4  pb-4">யாத்ராவின் சமையல் குகைக்கு வருக</h3>
+              </>
+            ) :
+              (<>
+                <h1 className=" text-white  mt-4 pt-4"> HELLO WELCOME</h1>
+                <h1 className=" text-white mb-4  pb-4">TO YATRA'S COOKING CAVE</h1>
+              </>
+              )
+            }
+          
+        
+          
+        </div>
+        <Container className="mt-4 pb-4">
+          <Row className="g-4 mb-5">
+            {cards.map((card, index) => (
+              <Col key={index} sm={6}>
+                <Card
+                  className={`feature-card mb-3 ${card.className}`}
+                  style={{
+                    height: "250px",
+                    "--bg-url": `url(${card.bg})`
+                  }}
+                >
+                  <Card.Body className="card-overlay d-flex justify-content-center align-items-center">
+                   {
+                    TamilChecker() ? (
+                      <h4 className="overlay-title m-0">{card.title.ta}</h4>
+                    ) : (
+                      <h4 className="overlay-title m-0">{card.title.en}</h4>
+                    )
+                   }
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
-      <Container className="mt-4">
-        <Row className="g-4">
-          {cards.map((card, index) => (
-            <Col key={index} sm={6}>
-              <Card className={`mb-3${card.className}`} style={{ height: "250px" }}>
-                <Card.Body className="d-flex justify-content-center align-items-center">
-                  <h4>{card.title}</h4>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <Footer />
     </div>
   );
 };

@@ -6,3 +6,80 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Feature Cards with BG image + hover blur + text overlay */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  isolation: isolate;
+}
+
+/* Background layer via pseudo element, uses inline CSS var --bg-url */
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease, filter 0.4s ease, opacity 0.4s ease;
+  z-index: 0;
+}
+
+/* Dark gradient overlay for readability */
+.feature-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%);
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover effects: slight zoom + subtle blur to background */
+.feature-card:hover::before {
+  transform: scale(1.06);
+  filter: blur(2px) brightness(0.95);
+}
+
+/* Reduce gradient darkness slightly on hover */
+.feature-card:hover::after {
+  opacity: 0.9;
+}
+
+/* Content overlay */
+.card-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+
+.overlay-title {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .overlay-title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-card {
+    border-radius: 12px;
+  }
+  .overlay-title {
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+  }
+}
