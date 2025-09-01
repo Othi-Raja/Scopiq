@@ -23,7 +23,7 @@ export default function AboutUs() {
     {
       title: "",
       description:
-        "We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.",
+        "We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.",
       tamildescription: "2009 ஆம் ஆண்டு காயத்ரி பிரியா துரை,தி ஹோம் செஃப் என்பவரால் நிறுவப்பட்டது.சென்னையில் ஒரு சிறிய உணவகத்திலிருந்து ஆர்வமும் சுவையும் நிறைந்த வளர்ந்து வரும் வீட்டு சமையலறை வரை - இது எங்கள் கதை, உண்மையான வீட்டில் தயாரிக்கப்பட்ட உணவின் மீதான ஆர்வத்தால் இயக்கப்படும் ஒரு பயணம்",
       image1: placehold,
       image2: placehold,
