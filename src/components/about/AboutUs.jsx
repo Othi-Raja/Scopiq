@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import placehold from "../assets/aboutpg/river.jpg";
-import Navbar from "./Navbar";
-import TamilChecker from "./TamilChecker";
-import Footer from "./Footer";
-import Timeline from './timeline.jsx'
+import placehold from "../../assets/aboutpg/river.jpg";
 import Aos from "aos";
+import TamilChecker from "../TamilChecker";
+import Navbar from "../Navbar";
+import Footer from "../footers/Footer";
+import Timeline from '../timeline.jsx'
 export default function AboutUs() {
   useEffect(() => {
     Aos.init();
@@ -123,7 +123,7 @@ export default function AboutUs() {
           ))}
         </Container>
       </div >
-      <Timeline/>
+      <Timeline />
       <Footer />
     </div>
   );

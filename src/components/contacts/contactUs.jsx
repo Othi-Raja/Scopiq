@@ -29,7 +29,8 @@ import {
 import { Container, Row, Col } from 'react-bootstrap'; // ✅ React-Bootstrap
 import './ContactUs.css';
 import Navbar from '../Navbar';
-import Footer from '../Footer';
+import Footer from '../footers/Footer';
+ 
 const Contact = () => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -86,7 +87,7 @@ const Contact = () => {
   return (
     <div>
       <div className="contact-page">
-        <Navbar />
+        <Navbar/>
         <Container  >
           {/* <Typography
           variant="h2"
@@ -374,7 +375,7 @@ const Contact = () => {
           </Row>
         </Container>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 };

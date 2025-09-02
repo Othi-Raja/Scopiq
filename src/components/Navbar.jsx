@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Drawer, IconButton, List, ListItem, ListItemText, Divider } from "@mui/material";
-import './AboutUs.css';
+import './about/AboutUs.css';
 import { Link } from "react-router-dom";
 import CartIcon from './CartIcon';
 // ✅ Helper to set cookie

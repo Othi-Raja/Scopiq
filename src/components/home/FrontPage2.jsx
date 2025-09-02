@@ -1,14 +1,15 @@
 import React from 'react';
 import './FrontPage2.css';
 import Marquee from "react-fast-marquee";
-import fishimg from '../assets/fish.png'
-import chickenimg from '../assets/chicken.png'
-import prawnimg from '../assets/prawn.png'
-import Navbar from './Navbar';
+import fishimg from '../../assets/fish.png'
+import chickenimg from '../../assets/chicken.png'
+import prawnimg from '../../assets/prawn.png'
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import Footer from './Footer';
-import servicebg from '../assets/servicebg.png'
-import TamilChecker from './TamilChecker';
+import servicebg from '../../assets/servicebg.png'
+import aboutcCardBg from '../../assets/aboutcCardBg.jpg'
+import TamilChecker from '../TamilChecker';
+import Footer from '../footers/Footer';
+import Navbar from '../Navbar';
 const FrontPage2 = () => {
   const cards = [
     {
@@ -26,7 +27,7 @@ const FrontPage2 = () => {
     {
       title: { en: "ABOUT US", ta: "எங்களை பற்றி" },
       className: "about-card",
-      bg: servicebg,
+      bg: aboutcCardBg,
       link: "/about"
     },
     {

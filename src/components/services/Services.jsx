@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './Services.css';
-import Navbar from './Navbar';
 import { Container, Row, Col } from 'react-bootstrap';
-import {  useDispatch } from 'react-redux';
-import { addToCart } from '../store/cartSlice';
+import { useDispatch } from 'react-redux';
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
@@ -12,12 +10,14 @@ import Button from '@mui/joy/Button';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 import { Height } from '@mui/icons-material';
-import duckcurru from '../assets/duckcurry.jpg'
-import biriyaniwithraita from '../assets/biriyaniwithraita.jpg'
-import goatlegpayaidiyappam from '../assets/goatlegpayaidiyappam.jpg'
-import muttoncurrwithrice from '../assets/muttoncurrwithrice.jpg'
-import chapathichickencurry from '../assets/chapathichickencurry.jpg'
-import Footer from './Footer';
+import duckcurru from '../../assets/duckcurry.jpg'
+import biriyaniwithraita from '../../assets/biriyaniwithraita.jpg'
+import goatlegpayaidiyappam from '../../assets/goatlegpayaidiyappam.jpg'
+import muttoncurrwithrice from '../../assets/muttoncurrwithrice.jpg'
+import chapathichickencurry from '../../assets/chapathichickencurry.jpg'
+import Footer from '../footers/Footer';
+import Navbar from '../Navbar';
+import { addToCart } from '../../store/cartSlice';
 const Services = () => {
   const [activeCategory, setActiveCategory] = useState('Main Course');
   const dispatch = useDispatch();
@@ -317,132 +317,131 @@ const Services = () => {
     dispatch(addToCart(item));
   };
   return (
-  <div>
-    <div className="bg-[#9a0002] text-white services-page ">
-      <Navbar />
-      {/* Main Title */}
-      <Container className='services-page'>
-        <Row>
-          <h1 className="services-main-title mt-5">OUR MENU</h1>
-          <p className="services-subtitle">Discover authentic indian dish lost through time</p>
-          {/* Category Filters */}
-          <div className="category-filters p-3">
-            {categories.map((category) => (
-              <button
-                key={category.name}
-                className={`category-filter ${activeCategory === category.name ? 'active' : ''}`}
-                onClick={() => setActiveCategory(category.name)}
-              >
-                <div
-                  className="category-dot"
-                  style={{ backgroundColor: category.color }}
-                ></div>
-                {category.name}
-              </button>
-            ))}
-          </div>
-          {/* Menu Items Grid */}
-          <div className="container">
-            <Row>
-              {filteredItems.map((item) => (
-                <Col key={item.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
-                  <Card
-                    sx={{
-                      minHeight: '400px',
-                      width: '100%',
-                      border: 'none',
-                      borderRadius: '16px',
-                      overflow: 'hidden',
-                      transition: 'all 0.3s ease',
-                      '&:hover': {
-                        transform: 'translateY(-8px)',
-                        // boxShadow: '0 20px 20px rgba(0,0,0,0.3)',
-                      }
-                    }}
-                  >
-                    <CardCover>
-                      <img
-                        height={280}
-                        src={item.image}
-                        loading="lazy"
-                        alt={item.name}
-                        style={{ objectFit: 'cover' }}
-                      />
-                    </CardCover>
-                    <CardCover
+    <div>
+      <div className="bg-[#9a0002] text-white services-page ">
+        <Navbar />
+        {/* Main Title */}
+        <Container className='services-page'>
+          <Row>
+            <h1 className="services-main-title mt-5">OUR MENU</h1>
+            <p className="services-subtitle">Discover authentic indian dish lost through time</p>
+            {/* Category Filters */}
+            <div className="category-filters p-3">
+              {categories.map((category) => (
+                <button
+                  key={category.name}
+                  className={`category-filter ${activeCategory === category.name ? 'active' : ''}`}
+                  onClick={() => setActiveCategory(category.name)}
+                >
+                  <div
+                    className="category-dot"
+                    style={{ backgroundColor: category.color }}
+                  ></div>
+                  {category.name}
+                </button>
+              ))}
+            </div>
+            {/* Menu Items Grid */}
+            <div className="container">
+              <Row>
+                {filteredItems.map((item) => (
+                  <Col key={item.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
+                    <Card
                       sx={{
-                        background:
-                          'linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 70%)',
-                      }}
-                    />
-                    <CardContent
-                      sx={{
-                        justifyContent: 'space-between',
-                        height: '100%',
-                        padding: '20px',
-                        display: 'flex',
-                        flexDirection: 'column'
+                        minHeight: '400px',
+                        width: '100%',
+                        border: 'none',
+                        borderRadius: '16px',
+                        overflow: 'hidden',
+                        transition: 'all 0.3s ease',
+                        '&:hover': {
+                          transform: 'translateY(-8px)',
+                          // boxShadow: '0 20px 20px rgba(0,0,0,0.3)',
+                        }
                       }}
                     >
-                      <div style={{ flex: 1 }}>
-                        <Typography
-                          level="title-lg"
-                          textColor="#fff"
-                          sx={{
-                            fontSize: '1.1rem',
-                            fontWeight: 600,
-                            marginBottom: '8px',
-                            lineHeight: 1.3,
-                            textTransform: 'capitalize'
-                          }}
-                        >
-                          {item.name}
-                        </Typography>
-                        <Typography
-                          textColor="#fff"
-                          sx={{
-                            fontSize: '1.2rem',
-                            fontWeight: 700,
-                            color: '#fff',
-                            marginBottom: '16px'
-                          }}
-                        >
-                          {item.price}
-                        </Typography>
-                      </div>
-                      <Button
-                        variant="solid"
-                        color="primary"
-                        startDecorator={<AddShoppingCartIcon />}
-                        onClick={() => handleAddToCart(item)}
+                      <CardCover>
+                        <img
+                          height={280}
+                          src={item.image}
+                          loading="lazy"
+                          alt={item.name}
+                          style={{ objectFit: 'cover' }}
+                        />
+                      </CardCover>
+                      <CardCover
                         sx={{
-                          backgroundColor: '#fff',
-                          color: '#9a0002',
-                          fontWeight: 600,
-                          borderRadius: '8px',
-                          padding: '10px 16px',
-                          transition: 'all 0.3s ease',
-                          '&:hover': {
-                            backgroundColor: '#f5f5f5',
-                            transform: 'scale(1.02)',
-                            boxShadow: '0 4px 12px rgba(255,255,255,0.3)'
-                          }
+                          background:
+                            'linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 70%)',
+                        }}
+                      />
+                      <CardContent
+                        sx={{
+                          justifyContent: 'space-between',
+                          height: '100%',
+                          padding: '20px',
+                          display: 'flex',
+                          flexDirection: 'column'
                         }}
                       >
-                        Add to Cart
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-          </div>
-        </Row>
-      </Container>
-     
+                        <div style={{ flex: 1 }}>
+                          <Typography
+                            level="title-lg"
+                            textColor="#fff"
+                            sx={{
+                              fontSize: '1.1rem',
+                              fontWeight: 600,
+                              marginBottom: '8px',
+                              lineHeight: 1.3,
+                              textTransform: 'capitalize'
+                            }}
+                          >
+                            {item.name}
+                          </Typography>
+                          <Typography
+                            textColor="#fff"
+                            sx={{
+                              fontSize: '1.2rem',
+                              fontWeight: 700,
+                              color: '#fff',
+                              marginBottom: '16px'
+                            }}
+                          >
+                            {item.price}
+                          </Typography>
+                        </div>
+                        <Button
+                          variant="solid"
+                          color="primary"
+                          startDecorator={<AddShoppingCartIcon />}
+                          onClick={() => handleAddToCart(item)}
+                          sx={{
+                            backgroundColor: '#fff',
+                            color: '#9a0002',
+                            fontWeight: 600,
+                            borderRadius: '8px',
+                            padding: '10px 16px',
+                            transition: 'all 0.3s ease',
+                            '&:hover': {
+                              backgroundColor: '#f5f5f5',
+                              transform: 'scale(1.02)',
+                              boxShadow: '0 4px 12px rgba(255,255,255,0.3)'
+                            }
+                          }}
+                        >
+                          Add to Cart
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            </div>
+          </Row>
+        </Container>
+      </div>
+      <Footer />
     </div>
-   <Footer/>
-  </div>
   );
 };
 export default Services;

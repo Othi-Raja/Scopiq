@@ -5,14 +5,12 @@ import { Provider } from 'react-redux';
 import { store } from './store/store';
 import "./index.css";
 import App from "./App.jsx";
-import AboutUs from "./components/AboutUs.jsx";
-import Navbar from "./components/Navbar.jsx";
-import FrontPage2 from "./components/FrontPage2.jsx";
-import Services from "./components/Services.jsx";
+import FrontPage2 from "./components/home/FrontPage2.jsx";
+import AboutUs from "./components/about/AboutUs.jsx";
+import Services from "./components/services/Services.jsx";
 import Myorder from "./components/orderspage/myorder.jsx";
- 
-import GlobalLoader from "./components/GlobalLoader.jsx";
 import Contact from "./components/contacts/contactUs.jsx";
+import GlobalLoader from "./components/loaders/GlobalLoader.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={store}>
@@ -24,7 +22,7 @@ createRoot(document.getElementById("root")).render(
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
             <Route path="/orders" element={<Myorder />} />
-            <Route path="/ContactUs" element={<Contact/>} />
+            <Route path="/ContactUs" element={<Contact />} />
             {/* You can map other paths too */}
           </Routes>
         </GlobalLoader>
