@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import placehold from "../../assets/aboutpg/river.jpg";
 import Aos from "aos";
 import TamilChecker from "../TamilChecker";
 import Navbar from "../Navbar";
