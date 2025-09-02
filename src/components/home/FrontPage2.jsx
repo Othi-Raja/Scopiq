@@ -7,6 +7,8 @@ import prawnimg from '../../assets/prawn.png'
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import servicebg from '../../assets/servicebg.png'
 import aboutcCardBg from '../../assets/aboutcCardBg.jpg'
+import contactusBG from '../../assets/contactusBGImage.jpg'
+import orderbg from '../../assets/aboutpg/orderbg.jpg'
 import TamilChecker from '../TamilChecker';
 import Footer from '../footers/Footer';
 import Navbar from '../Navbar';
@@ -21,7 +23,7 @@ const FrontPage2 = () => {
     {
       title: { en: "ORDER NOW", ta: "இப்போது ஆர்டர் செய்யவும்" },
       className: "order-card",
-      bg: servicebg,
+      bg: orderbg,
       link: "/orders"
     },
     {
@@ -33,7 +35,7 @@ const FrontPage2 = () => {
     {
       title: { en: "CONTACT US", ta: "எங்களை தொடர்பு கொள்ள" },
       className: "contact-card",
-      bg: servicebg,
+      bg: contactusBG,
       link: "/ContactUs"
     },
   ];
@@ -96,8 +98,9 @@ const FrontPage2 = () => {
                   onClick={() => window.location.href = card.link}
                   style={{
                     height: "250px",
-                    "--bg-url": `url(${card.bg})`
-                  }}
+                    "--bg-url": `url(${card.bg})`,
+               
+                  }} 
                 >
                   <Card.Body className="card-overlay d-flex justify-content-center align-items-center">
                     {

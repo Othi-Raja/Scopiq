@@ -6,6 +6,10 @@ import TamilChecker from "../TamilChecker";
 import Navbar from "../Navbar";
 import Footer from "../footers/Footer";
 import Timeline from '../timeline.jsx'
+import img1 from '../../assets/card/1.jpg'
+import img2 from '../../assets/card/img2.jpg'
+import img3 from '../../assets/card/img3.jpg'
+import img4 from '../../assets/card/img4.jpg'
 export default function AboutUs() {
   useEffect(() => {
     Aos.init();
@@ -17,16 +21,16 @@ export default function AboutUs() {
       description:
         "A journey filled with desire and flavor, an attempt to bring the warmth of home-cooked meals straight to your table. Our vision goes beyond just serving food we want to recreate the essence of comfort, care, and nourishment that every home-cooked dish carries. With a focus on freshness, authenticity, and balanced nutrition, we strive to deliver meals that are not only delicious but also wholesome and satisfying.",
       tamildescription: "ஆசையும் சுவையும் நிறைந்த பயணம், வீட்டில் சமைத்த உணவை உங்கள் வீட்டிற்கு கொண்டு வரும் முயற்சி. ஒவ்வொரு வீட்டிலும் கிடைக்கும் அனைவருக்கும் ஆரோக்கியமான, சுவையான மற்றும் திருப்திகரமான வீட்டில் சமைத்த உணவை வழங்குவதே எங்கள் ஒரே நோக்கம்.",
-      image1: placehold,
-      image2: placehold,
+      image1: img1,
+      image2: img2,
     },
     {
       title: "",
       description:
         "We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.",
       tamildescription: "2009 ஆம் ஆண்டு காயத்ரி பிரியா துரை,தி ஹோம் செஃப் என்பவரால் நிறுவப்பட்டது.சென்னையில் ஒரு சிறிய உணவகத்திலிருந்து ஆர்வமும் சுவையும் நிறைந்த வளர்ந்து வரும் வீட்டு சமையலறை வரை - இது எங்கள் கதை, உண்மையான வீட்டில் தயாரிக்கப்பட்ட உணவின் மீதான ஆர்வத்தால் இயக்கப்படும் ஒரு பயணம்",
-      image1: placehold,
-      image2: placehold,
+      image1: img3,
+      image2: img4,
     },
   ];
   return (
@@ -70,16 +74,16 @@ export default function AboutUs() {
                     {TamilChecker() ? <p>{item.tamildescription}</p> : <p className="text-justify">{item.description}</p>}
                   </Col>
                   {/* Images second */}
-                  <Col md={6}>
+                  <Col md={6} className="">
                     <img
-                      style={{ height: "300px" }}
+                      style={{ height: "300px", maxWidth: '400px' }}
                       src={item.image1}
                       draggable={false}
                       alt="image"
                       className="img-fluid rounded-4 mb-4"
                     />
                     <img
-                      style={{ height: "300px" }}
+                      style={{ height: "300px", maxWidth: '400px' }}
                       src={item.image2}
                       draggable={false}
                       alt="image"
@@ -96,12 +100,12 @@ export default function AboutUs() {
                         <img
                           src={item.image1}
                           alt="image"
-                          style={{ height: "300px" }}
+                          style={{ height: "300px", maxWidth: '400px' }}
                           className="img-fluid rounded-4 mb-4"
                           draggable={false}
                         />
                         <img
-                          style={{ height: "300px" }}
+                          style={{ height: "300px", maxWidth: '400px' }}
                           src={item.image2}
                           draggable={false}
                           alt="image"
