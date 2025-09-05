@@ -16,6 +16,7 @@ import goatlegpayaidiyappam from '../../assets/goatlegpayaidiyappam.jpg'
 import muttoncurrwithrice from '../../assets/muttoncurrwithrice.jpg'
 import chapathichickencurry from '../../assets/chapathichickencurry.jpg'
 import Footer from '../footers/Footer';
+import video from '../../assets/video/servicevideo.mp4'
 import Navbar from '../Navbar';
 import { addToCart } from '../../store/cartSlice';
 const Services = () => {
@@ -275,7 +276,7 @@ const Services = () => {
       "price": "Rs.185",
       "priceColor": "#009944",
       "image": duckcurru,
-      "category": "YCC Signature Dish"
+      "category": "Desserts"
     },
     {
       "id": 32,
@@ -283,7 +284,7 @@ const Services = () => {
       "price": "Rs.215",
       "priceColor": "#009944",
       "image": goatlegpayaidiyappam,
-      "category": "YCC Signature Dish"
+      "category": "Desserts"
     },
     {
       "id": 33,
@@ -291,7 +292,7 @@ const Services = () => {
       "price": "Rs.395",
       "priceColor": "#009944",
       "image": chapathichickencurry,
-      "category": "YCC Signature Dish"
+      "category": "Desserts"
     },
     {
       "id": 34,
@@ -299,7 +300,7 @@ const Services = () => {
       "price": "Rs.295",
       "priceColor": "#009944",
       "image": duckcurru,
-      "category": "YCC Signature Dish"
+      "category": "Desserts"
     },
     {
       "id": 35,
@@ -307,7 +308,7 @@ const Services = () => {
       "price": "Rs.450",
       "priceColor": "#009944",
       "image": goatlegpayaidiyappam,
-      "category": "YCC Signature Dish"
+      "category": "Desserts"
     }
   ];
   const filteredItems = activeCategory === 'All'
@@ -340,6 +341,34 @@ const Services = () => {
                   {category.name}
                 </button>
               ))}
+              {
+                activeCategory === "YCC Signature Dish" && (
+                  <div className="relative">
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      className="w-full h-auto rounded-lg"
+                    >
+                      <source src={video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    {/* Overlay Text */}
+                    <p
+                      className="
+          absolute bottom-3 left-1/2 -translate-x-1/2 
+          text-white bg-black/60 text-center 
+          px-3 py-1 rounded-md  
+          text-xs sm:text-sm md:text-base lg:text-lg
+        "
+                    >
+                      Appreciative element available for monthly subscription users,
+                      for more info contact
+                      <span className="font-semibold"> yatrascookingcave@gmail.com</span>
+                    </p>
+                  </div>
+                )
+              }
             </div>
             {/* Menu Items Grid */}
             <div className="container">

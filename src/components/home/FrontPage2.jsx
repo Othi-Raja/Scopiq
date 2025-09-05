@@ -4,8 +4,13 @@ import Marquee from "react-fast-marquee";
 import fishimg from '../../assets/fish.png'
 import chickenimg from '../../assets/chicken.png'
 import prawnimg from '../../assets/prawn.png'
+import img1 from '../../assets/other/image1.png'
+import img2 from '../../assets/other/image2.png'
+import img3 from '../../assets/other/image3.png'
+import img4 from '../../assets/other/image4.png'
+import img5 from '../../assets/other/image5.png'
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import servicebg from '../../assets/servicebg.png'
+import servicebg from '../../assets/other/service.jpg'
 import aboutcCardBg from '../../assets/aboutcCardBg.jpg'
 import contactusBG from '../../assets/contactusBGImage.jpg'
 import orderbg from '../../assets/aboutpg/orderbg.jpg'
@@ -53,7 +58,7 @@ const FrontPage2 = () => {
               height: "300px",
               width: "300px",
             }}
-            src={fishimg}
+            src={img4}
             alt="Decorative food background"
           />
           <img
@@ -62,10 +67,52 @@ const FrontPage2 = () => {
               width: "300px",
             }}
             className="decorative-image right-image"
-            src={chickenimg}
+            src={img1}
+            alt="Decorative food background"
+          />
+          <img
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            className="decorative-image right-image"
+            src={img2}
+            alt="Decorative food background"
+          />
+          <img
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            className="decorative-image right-image"
+            src={img3}
             alt="Decorative food background"
           />
           {/* Central oval image */}
+          <img
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            className="central-food-image"
+            src={img5}
+          />
+          <img
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            className="central-food-image"
+            src={fishimg}
+          />
+          <img
+            style={{
+              height: "300px",
+              width: "300px",
+            }}
+            className="central-food-image"
+            src={chickenimg}
+          />
           <img
             style={{
               height: "300px",
@@ -99,8 +146,7 @@ const FrontPage2 = () => {
                   style={{
                     height: "250px",
                     "--bg-url": `url(${card.bg})`,
-               
-                  }} 
+                  }}
                 >
                   <Card.Body className="card-overlay d-flex justify-content-center align-items-center">
                     {

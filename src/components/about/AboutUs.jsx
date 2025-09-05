@@ -6,9 +6,9 @@ import Navbar from "../Navbar";
 import Footer from "../footers/Footer";
 import Timeline from '../timeline.jsx'
 import img1 from '../../assets/card/1.jpg'
-import img2 from '../../assets/card/img2.jpg'
+import img2 from '../../assets/other/aboutpgimag3.jpg'
 import img3 from '../../assets/card/img3.jpg'
-import img4 from '../../assets/card/img4.jpg'
+import img4 from '../../assets/aboutpg/image4.jpg'
 export default function AboutUs() {
   useEffect(() => {
     Aos.init();
@@ -26,8 +26,8 @@ export default function AboutUs() {
     {
       title: "",
       description:
-        "We believe in delivering meals that not only satisfy hunger but also provide a sense of home and care.",
-      tamildescription: "2009 ஆம் ஆண்டு காயத்ரி பிரியா துரை,தி ஹோம் செஃப் என்பவரால் நிறுவப்பட்டது.சென்னையில் ஒரு சிறிய உணவகத்திலிருந்து ஆர்வமும் சுவையும் நிறைந்த வளர்ந்து வரும் வீட்டு சமையலறை வரை - இது எங்கள் கதை, உண்மையான வீட்டில் தயாரிக்கப்பட்ட உணவின் மீதான ஆர்வத்தால் இயக்கப்படும் ஒரு பயணம்",
+        "Founded in 2009 by Gayathri Priya Durai, what began as a humble restaurant in Chennai soon transformed into something much more personal and heartfelt — a home kitchen built on passion, tradition, and flavor. Over the years, our journey has been shaped not just by recipes, but by memories, love, and the joy of sharing food that feels like home . This is more than just food; it is a promise of authenticity, a connection to tradition, and an invitation to experience the flavors that have nourished families for generations. Each meal is our way of bringing people closer  — to their roots, to each other, and to the joy that only good food can create.",
+      tamildescription: "2009 ஆம் ஆண்டு காயத்ரி பிரியா துரை அவர்களால் நிறுவப்பட்ட, சென்னையில் ஒரு எளிமையான உணவகமாகத் தொடங்கிய இது, விரைவில் மிகவும் தனிப்பட்ட மற்றும் இதயப்பூர்வமான ஒன்றாக மாறியது - ஆர்வம், பாரம்பரியம் மற்றும் சுவையின் அடிப்படையில் கட்டமைக்கப்பட்ட ஒரு வீட்டு சமையலறை. பல ஆண்டுகளாக, எங்கள் பயணம் சமையல் குறிப்புகளால் மட்டுமல்ல, நினைவுகள், அன்பு மற்றும் வீடு போன்ற உணவைப் பகிர்ந்து கொள்வதன் மகிழ்ச்சி ஆகியவற்றால் வடிவமைக்கப்பட்டுள்ளது. இது வெறும் உணவை விட அதிகம்; இது நம்பகத்தன்மையின் வாக்குறுதி, பாரம்பரியத்துடனான தொடர்பு மற்றும் தலைமுறைகளாக குடும்பங்களை வளர்த்து வரும் சுவைகளை அனுபவிக்க ஒரு அழைப்பு. ஒவ்வொரு உணவும் மக்களை நெருக்கமாகக் கொண்டுவருவதற்கான எங்கள் வழியாகும் - அவர்களின் வேர்களுக்கு, ஒருவருக்கொருவர், மற்றும் நல்ல உணவு மட்டுமே உருவாக்கக்கூடிய மகிழ்ச்சிக்கு",
       image1: img3,
       image2: img4,
     },
@@ -108,7 +108,7 @@ export default function AboutUs() {
                           src={item.image2}
                           draggable={false}
                           alt="image"
-                          className="img-fluid rounded-4"
+                          className=" rounded-4"
                         />
                       </Col>
                       {/* Text second (desktop), first (mobile) */}

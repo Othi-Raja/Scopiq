@@ -226,7 +226,7 @@ const Timeline = () => {
           </div>
         </div>
         {/* Footer message */}
-        <div className="text-center mt-12 sm:mt-16 lg:mt-20 mx-2 sm:mx-4 lg:mx-8 p-6 sm:p-8 lg:p-10 bg-white/60 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/20  animate-[fadeInUp_1s_ease-out_2.5s_forwards]">
+        <div className="text-center mt-12 sm:mt-16 lg:mt-20 mx-2 sm:mx-4 lg:mx-8 p-6 sm:p-8 lg:p-10  backdrop-blur-sm rounded-2xl sm:rounded-3xl  animate-[fadeInUp_1s_ease-out_2.5s_forwards]">
           <p className="text-gray-700 text-base sm:text-lg lg:text-xl italic leading-relaxed">
             "Every recipe tells a story, every dish carries tradition."
           </p>

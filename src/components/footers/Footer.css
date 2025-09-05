@@ -58,7 +58,7 @@
 }
 .contact-text,
 .address-text {
-  font-weight: 600;
+  font-weight: 400;
   color: var(--brand-dark);
 }
 .address-text {
