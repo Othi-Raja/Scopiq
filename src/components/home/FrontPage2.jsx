@@ -13,7 +13,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import servicebg from '../../assets/other/service.jpg'
 import aboutcCardBg from '../../assets/aboutcCardBg.jpg'
 import contactusBG from '../../assets/contactusBGImage.jpg'
-import orderbg from '../../assets/aboutpg/orderbg.jpg'
+import orderbg from '../../assets/other/ordernowimg.jpg'
 import TamilChecker from '../TamilChecker';
 import Footer from '../footers/Footer';
 import Navbar from '../Navbar';

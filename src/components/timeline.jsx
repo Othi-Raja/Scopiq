@@ -9,7 +9,7 @@ const Timeline = () => {
     {
       year: {
         en: "2009 – The Beginning",
-        tn: "2009 -தொடக்கம்"
+        tn: "2009 - தொடக்கம்"
       },
       text: {
         en: "Gayathripriya Durai started a small restaurant in Chennai, serving traditional recipes passed down from previous generations to customers with care",
@@ -19,7 +19,7 @@ const Timeline = () => {
     {
       year: {
         en: "2013 – A Pause",
-        tn: "2013 - ஒரு இடைவெளை"
+        tn: "2013 - ஒரு இடைவேளை"
       },
       text: {
         en: "She took a short break, but her passion for cooking remained strong and unwavering",
@@ -29,31 +29,31 @@ const Timeline = () => {
     {
       year: {
         en: "2021 – A New Beginning",
-        tn: "2021 –ஒரு புதிய தொடக்கம்"
+        tn: "2021 – ஒரு புதிய தொடக்கம்"
       },
       text: {
         en: "Restarting from home, Yathraa's Cooking Cave began once again, accepting orders through Instagram and private platforms.",
-        tn: "வீட்டிலிருந்து மீண்டும் தொடங்கி, யாத்ரா’ஸ் கூக்கிங் கேவ் இன்ஸ்டாகிராம் மற்றும்  சோசியல்மீடியா  மூலம் ஆர்டர்களை ஏற்றுக்கொள்ளத் தொடங்கியது"
+        tn: "வீட்டிலிருந்து மீண்டும் தொடங்கி, யாத்ராஸ் குக்கிங் கேவ் இன்ஸ்டாகிராம் மற்றும்  சோசியல்மீடியா  மூலம் ஆர்டர்களை ஏற்றுக்கொள்ளத் தொடங்கியது"
       },
     },
     {
       year: {
         en: "2023 – Expanding Our Service",
-        tn: "2023 –எங்கள் சேவையை விரிவாக்கல்"
+        tn: "2023 – எங்கள் சேவையை விரிவாக்கல்"
       },
       text: {
         en: "Started offering food services in the Anna Nagar area, bringing delicious homemade meals to more people",
-        tn: "அண்ணா நகர் பகுதியில் உணவு சேவைகளை வழங்கத் தொடங்கியதோடு, ருசிகரமான வீட்டு உணவுகளை  பலரிடம் கொண்டு சேர்கிறார் "
+        tn: "அண்ணா நகர் பகுதியில் உணவு சேவைகளை வழங்கத் தொடங்கியதோடு, ருசிகரமான வீட்டு உணவுகளை  பலரிடம் கொண்டு சேர்க்கிறோம் "
       },
     },
     {
       year: {
         en: "2025 – A Journey of Fulfilling Dreams",
-        tn: "னவுகளை நிறைவேற்றும் ஒரு பயண"
+        tn: "2025 - கனவுகளை நினைவாக்கும் கலைநயமிக்க பயணம்"
       },
       text: {
         en: "Introducing Yatra's Cooking Cave | The Home Chef, with the vision of bringing traditional, ancestral recipes into every home through this heartfelt culinary journey",
-        tn: "யாத்ரா’ஸ் கூக்கிங் கேவ் | தி ஹோம் ஷெஃப் என அறிமுகப்படுத்தி, பாரம்பரியமான முன்னோர்களின் சமையல் செய்முறைகளை அன்பும்,அக்கறை நிறைந்த மனதோடு  சமையல் பயணத்தின் மூலம் ஒவ்வொரு வீட்டிற்கும் கொண்டு சேர்கிறா"
+        tn: "யாத்ராஸ் குக்கிங் கேவ் முன்னோர்களின் பாரம்பரியம் மற்றும் நிகரில்லாத சுவை கொண்ட உணவு வகைகளை உங்கள் வீட்டுக்கே கொண்டு வரும் ஹோம் செஃப். யாத்ராஸ் மூலம் ஆரோக்கியமான உணவு இனி கனவல்ல நனவு"
       },
     },
   ];
@@ -90,7 +90,7 @@ const Timeline = () => {
   };
   const timelineSubtitle = {
     en: "The inspiring journey of passion, tradition, and culinary excellence",
-    tn: "ஆர்வம், பாரம்பரியம் மற்றும் சமையல் சிறப்புமிக்க பிரேரணையான பயணம்"
+    tn: "ஆரோக்கியம், பாரம்பரியம் மற்றும் ருசியான சமையல்என ஆர்வத்தை தூண்டும் பயணம்."
   };
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">

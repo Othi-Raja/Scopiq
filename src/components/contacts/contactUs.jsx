@@ -8,19 +8,14 @@ import {
   Box,
   Divider,
   IconButton,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
   Chip
 } from '@mui/material';
 import {
   AccessTime,
   Facebook,
   Instagram,
-  Twitter,
   YouTube,
-  LinkedIn,
+  WhatsApp,
   Phone,
   Email,
   LocationOn,
@@ -30,7 +25,6 @@ import { Container, Row, Col } from 'react-bootstrap'; // ✅ React-Bootstrap
 import './ContactUs.css';
 import Navbar from '../Navbar';
 import Footer from '../footers/Footer';
- 
 const Contact = () => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -78,16 +72,15 @@ const Contact = () => {
   //   'Corporate Order'
   // ];
   const socialLinks = [
-    { icon: <Facebook />, name: 'Facebook', color: '#1877F2' },
-    { icon: <Instagram />, name: 'Instagram', color: '#E4405F' },
-    { icon: <Twitter />, name: 'Twitter', color: '#1DA1F2' },
-    { icon: <YouTube />, name: 'YouTube', color: '#FF0000' },
-    { icon: <LinkedIn />, name: 'LinkedIn', color: '#0A66C2' }
+    { icon: <Facebook />, name: 'Facebook', color: '#1877F2', url: 'https://www.facebook.com/' },
+    { icon: <Instagram />, name: 'Instagram', color: '#E4405F', url: 'https://www.instagram.com/' },
+    { icon: <YouTube />, name: 'YouTube', color: '#FF0000', url: 'https://www.youtube.com/' },
+    { icon: <WhatsApp />, name: 'LinkedIn', color: '#0A66C2', url: 'https://wa.me/917824099400' }
   ];
   return (
     <div>
       <div className="contact-page">
-        <Navbar/>
+        <Navbar />
         <Container  >
           {/* <Typography
           variant="h2"
@@ -174,11 +167,11 @@ const Contact = () => {
                     </Typography>
                     <Box sx={{ mb: 2, display: 'flex', alignItems: 'center' }}>
                       <Phone sx={{ mr: 2, color: '#FFD700' }} />
-                      <Typography variant="body1">+91 98765 43210</Typography>
+                      <Typography variant="body1">+91 78240 99400</Typography>
                     </Box>
                     <Box sx={{ mb: 2, display: 'flex', alignItems: 'center' }}>
                       <Email sx={{ mr: 2, color: '#FFD700' }} />
-                      <Typography variant="body1">info@yatracc.com</Typography>
+                      <Typography variant="body1">yatrascookingcave@gmail.com</Typography>
                     </Box>
                   </Box>
                   <Divider sx={{ borderColor: 'rgba(255,255,255,0.2)', my: 3 }} />
@@ -191,6 +184,8 @@ const Contact = () => {
                       {socialLinks.map((social, index) => (
                         <IconButton
                           key={index}
+                          href={social.url}
+                          target="_blank"
                           sx={{
                             background: 'rgba(255,255,255,0.1)',
                             color: 'white',
@@ -375,7 +370,7 @@ const Contact = () => {
           </Row>
         </Container>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

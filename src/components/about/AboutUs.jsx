@@ -19,7 +19,7 @@ export default function AboutUs() {
       titleTamil: "எங்கள் பயணம்",
       description:
         "A journey filled with desire and flavor, an attempt to bring the warmth of home-cooked meals straight to your table. Our vision goes beyond just serving food we want to recreate the essence of comfort, care, and nourishment that every home-cooked dish carries. With a focus on freshness, authenticity, and balanced nutrition, we strive to deliver meals that are not only delicious but also wholesome and satisfying.",
-      tamildescription: "ஆசையும் சுவையும் நிறைந்த பயணம், வீட்டில் சமைத்த உணவை உங்கள் வீட்டிற்கு கொண்டு வரும் முயற்சி. ஒவ்வொரு வீட்டிலும் கிடைக்கும் அனைவருக்கும் ஆரோக்கியமான, சுவையான மற்றும் திருப்திகரமான வீட்டில் சமைத்த உணவை வழங்குவதே எங்கள் ஒரே நோக்கம்.",
+      tamildescription: "கனவும் ருசியும் கைகோர்க்கும் பயணம். ருசியான வீட்டு சாப்பாடு என்பது அனைவரின் கனவு... அந்த ஆரோக்கியமான, சுவையான மற்றும் திருப்தி தரக்கூடிய கைமணத்துடன் கூடிய வீட்டு சாப்பாட்டை உங்கள் வாசலுக்கே வரவழைத்துக் கொடுப்பதுதான் எங்கள் ஒரே நோக்கம்.",
       image1: img1,
       image2: img2,
     },
@@ -44,7 +44,7 @@ export default function AboutUs() {
             {TamilChecker() ? (
               <>
                 <h1>வணக்கம் </h1>
-                <h1>யாத்ராவின் சமையல் குகைக்கு வருக</h1>
+                <h1>யாத்ராஸ் குக்கிங் கேவ் உங்களை வரவேற்கிறது</h1>
               </>
             ) :
               (<>
