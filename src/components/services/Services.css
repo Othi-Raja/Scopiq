@@ -60,6 +60,7 @@
   transition: all 0.3s ease;
   font-size: 15px;
   font-weight: 600;
+  height: 50px;
   color: #3c070d;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }

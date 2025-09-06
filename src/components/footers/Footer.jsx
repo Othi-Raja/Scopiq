@@ -49,7 +49,7 @@ const Footer = () => {
                 <path d="M30.1804 21.3145C30.1804 26.4274 26.2403 30.5723 21.38 30.5723C16.5198 30.5723 12.5797 26.4274 12.5797 21.3145C12.5797 16.2015 16.5198 12.0566 21.38 12.0566C26.2403 12.0566 30.1804 16.2015 30.1804 21.3145Z" fill="#E5E5E5" />
               </svg>
               <div className="address-text">
-                {TamilChecker() ? <b>கந்தன் குடில் ,<br /></b> : <b>Kandan kudil , <br /></b>}
+                {TamilChecker() ? <b>கந்தன் குடில் ,<br /></b> : <b className='uppercase'>Kandan kudil , <br /></b>}
                 {TamilChecker() ? <p>எண் 7,<br />அண்ணா நகர் மேற்கு,<br />சென்னை - 600040.</p> : <p>No-7,<br />Anna Nagar West,<br />Chennai - 600040</p>}
               </div>
             </div>

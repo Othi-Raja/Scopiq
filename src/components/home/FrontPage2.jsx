@@ -6,7 +6,7 @@ import chickenimg from '../../assets/chicken.png'
 import prawnimg from '../../assets/prawn.png'
 import img1 from '../../assets/other/image1.png'
 import img2 from '../../assets/other/image2.png'
-import img3 from '../../assets/other/image3.png'
+// import img3 from '../../assets/other/image3.png'
 import img4 from '../../assets/other/image4.png'
 import img5 from '../../assets/other/image5.png'
 import { Card, Col, Container, Row } from 'react-bootstrap';
@@ -48,7 +48,7 @@ const FrontPage2 = () => {
     <div>
       <div className="front-page-2 bg-[#9a0002] mb-2 ">
         <Navbar />
-        <Marquee autoFill style={{
+        <Marquee speed={140} delay={0} style={{
           zIndex: 1
         }} >
           {/* Background decorative images */}
@@ -79,7 +79,7 @@ const FrontPage2 = () => {
             src={img2}
             alt="Decorative food background"
           />
-          <img
+          {/* <img
             style={{
               height: "300px",
               width: "300px",
@@ -87,7 +87,7 @@ const FrontPage2 = () => {
             className="decorative-image right-image"
             src={img3}
             alt="Decorative food background"
-          />
+          /> */}
           {/* Central oval image */}
           <img
             style={{

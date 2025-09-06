@@ -16,7 +16,7 @@ import goatlegpayaidiyappam from '../../assets/goatlegpayaidiyappam.jpg'
 import muttoncurrwithrice from '../../assets/muttoncurrwithrice.jpg'
 import chapathichickencurry from '../../assets/chapathichickencurry.jpg'
 import Footer from '../footers/Footer';
-import video from '../../assets/video/servicevideo.mp4'
+import video from '../../assets/video/OilBath_Made_with_Clipchamp.mp4'
 import Navbar from '../Navbar';
 import { addToCart } from '../../store/cartSlice';
 const Services = () => {
@@ -348,6 +348,7 @@ const Services = () => {
                       autoPlay
                       muted
                       loop
+                      controls
                       className="w-full h-auto rounded-lg"
                     >
                       <source src={video} type="video/mp4" />
