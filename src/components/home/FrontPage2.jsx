@@ -131,7 +131,8 @@ const FrontPage2 = () => {
           ) :
             (<>
               <h1 className=" text-white  mt-4 pt-4"> HELLO WELCOME</h1>
-              <h1 className=" text-white mb-4  pb-4">TO YATRA'S COOKING CAVE</h1>
+              <h1 className=" text-white   ">TO YATRA'S COOKING CAVE</h1>
+              <small className='text-white blinking'>Only accepting order within 5 kms of No - 7 , Anna Nagar , West , Chennai - 600040</small>
             </>
             )
           }

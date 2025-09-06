@@ -83,3 +83,11 @@
     letter-spacing: 0.6px;
   }
 }
+.blinking{
+  animation: blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+  0%{     opacity: 1;   }
+  50%{   opacity: 0.5;  }
+  100%{   opacity: 1; }
+}
